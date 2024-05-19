@@ -1,0 +1,75 @@
+# 任务列表，在这里填写脚本文件的名字，填写格式如 ["mt", "kanxue"]
+taskList = ["ciweimao", "ciyuanji"]
+
+# 推送参数
+[Push.qywx]
+corpsecret = ""
+corpid = ""
+agentid = ""
+mediaid = ""
+[Push.telegram]
+tgbotoken = ""
+chatid = ""
+[Push.pushdeer]
+key = "PDU22395Tpuesm0NW9m9F32Sdj6NOOqnmaP3QFvG0"
+[Push.ftqq]
+key = ""
+
+# 在刺猬猫app里抓包后，可从请求体里获得
+[ciweimao]
+account = "书客63756384686"
+token = "bc762645905dd7bcc34dba8bde9768b7"
+
+# 在菠萝包轻小说app里抓包后，可从请求头里获得cookie和devicetoken，userId需要抓包个人页面获得
+[sfacg]
+cookie = ".SFCommunity=CB41BE26968E847F7DA03B99FFA425ACB0E885B68CF9FAFDBD2875EC01DFBFD9B4CAC6439CAD17E6660BD550CB130933A7537508C926B1592376E34816A816B26E4BDA120B389FFBCA22AAD45E7D60CEA53DAFF4D100F75989DB84FC979681AC; session_PC=C229E64BBEAA9D68C6283A43D284ABB8;"
+userId = ""
+devicetoken = ""
+
+# 在菠萝包漫画app里抓包后，可从请求头里获得cookie和devicetoken，userId需要抓包个人页面获得
+[sfmh]
+cookie = ""
+userId = ""
+devicetoken = ""
+
+# 在点鸭app里抓包后，可从请求头里获得cookie和devicetoken
+[dianya]
+cookie = ""
+devicetoken = ""
+
+# 在次元姬app里抓包后，可从请求头里获得
+[ciyuanji]
+token = "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ4eW5vdmVsIiwic3ViIjoidXNlclRva2VuIiwidXNlcklkIjoiMjAzMDMxNzE2MDc3MTQyMTA0In0.9vJ8ziasXs8wi5PpkiaQsKJbFSepaM4K4jVTmPbzpMA"
+deviceno = "e5c60692ba0e96d2"
+oaid = "version: 3.4.2"
+targetmodel = "SEA-AL10"
+
+# 在不可能的世界APP里抓包登录可得
+[bkneng]
+username = ""
+n4 = ""
+n5 = ""
+n7 = ""
+device = ""
+aesKey = ""
+aesData = ""
+
+# 在绅士领域app里抓包签到后，可从请求体里获得
+[ssly]
+uid = ""
+
+# 抓包mt论坛网站获得
+[mt]
+cookie = ""
+
+# 在库街区app里抓包后，可从请求头里获得token和devCode，userId需要抓包我的页面获得
+[kurobbs]
+token = ""
+userId = ""
+devCode =  ""
+distinctId = ""
+model = ""
+
+# 抓包看雪论坛网站获得
+[kanxue]
+cookie = ""
