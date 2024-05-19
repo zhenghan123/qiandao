@@ -1,6 +1,7 @@
 # 任务列表，在这里填写脚本文件的名字，填写格式如 ["mt", "bkneng"]
-# taskList = ["ciweimao", "sfacg", "sfmh", "dianya", "ciyuanji", "bkneng", "ssly", "kurobbs", "kanxue"]
 taskList = ["sfacg"]
+# taskList = ["ciweimao", "sfacg", "sfmh", "dianya", "ciyuanji", "bkneng", "ssly", "kurobbs", "kanxue"]
+
 # 推送参数
 [Push.qywx]
 corpsecret = ""
