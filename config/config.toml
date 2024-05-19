@@ -1,5 +1,5 @@
 # 任务列表，在这里填写脚本文件的名字，填写格式如 ["mt", "bkneng"]
-taskList = ["ciweimao", "ciyuanji", "ssly", "kurobbs", "kanxue", "bkneng"]
+taskList = ["ciweimao", "sfacg", "sfmh", "dianya", "ciyuanji", "bkneng", "ssly", "kurobbs", "kanxue"]
 # taskList = ["bkneng"]
 # 推送参数
 [Push.qywx]
@@ -28,14 +28,14 @@ devicetoken = "20CD7549-0730-34E8-A370-AB1C6E944D22"
 
 # 在菠萝包漫画app里抓包后，可从请求头里获得cookie和devicetoken，userId需要抓包个人页面获得
 [sfmh]
-cookie = ""
-userId = ""
-devicetoken = ""
+cookie = ".SFCommunity=0B15C9ABEB0DDB4B133A6931E0A63C6C7216049D22F6E0D825538BBFFFC705C136F3D64300A768C971AD4752382575DB5716CBD980DBC4B4B6001AC1D023FE4827C284907B61DB6BBEFBC9F5C205823C00B587598C79CE3F40D96DFC6D00E696; session_APP2=3F59F17CD757C61DB6762E9F0466613B"
+userId = "7d38e6a4-c79c-3dd1-a82d-363ba80f4c08"
+devicetoken = "7D38E6A4-C79C-3DD1-A82D-363BA80F4C08"
 
 # 在点鸭app里抓包后，可从请求头里获得cookie和devicetoken
 [dianya]
 cookie = ".SFCommunity=3FDF7BF620BD924D7E936337F133CFAEF081A5147D1FB1A6CFA08F51B9F6C9B7A108974F923C4E9E63672AD3534DD55A4E3C07B20FB316D9892176368D332908434D0E84631CB1495829882003CD59520A90BC4D004D86B627449D2136C6722A; session_APP3=EDD52D1F1DCF7B89D829D1BEFC7380CE"
-devicetoken = "M2102K1GM2102K1G"
+devicetoken = "3582387F-943B-3F90-80C6-39379228287A"
 
 # 在次元姬app里抓包后，可从请求头里获得
 [ciyuanji]
