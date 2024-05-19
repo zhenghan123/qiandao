@@ -1,6 +1,6 @@
 # 任务列表，在这里填写脚本文件的名字，填写格式如 ["mt", "kanxue"]
 # taskList = ["ciweimao", "ciyuanji", "sfacg", "dianya", "bkneng", "ssly", "kurobbs", "kanxue"]
-taskList = ["sfacg"]
+taskList = ["bkneng", "ssly", "kurobbs", "kanxue"]
 # 推送参数
 [Push.qywx]
 corpsecret = ""
@@ -23,8 +23,8 @@ token = "bc762645905dd7bcc34dba8bde9768b7"
 # 在菠萝包轻小说app里抓包后，可从请求头里获得cookie和devicetoken，userId需要抓包个人页面获得
 [sfacg]
 cookie = ".SFCommunity=CB41BE26968E847F7DA03B99FFA425ACB0E885B68CF9FAFDBD2875EC01DFBFD9B4CAC6439CAD17E6660BD550CB130933A7537508C926B1592376E34816A816B26E4BDA120B389FFBCA22AAD45E7D60CEA53DAFF4D100F75989DB84FC979681AC; session_PC=C229E64BBEAA9D68C6283A43D284ABB8;"
-userId = "zhh寒寒"
-devicetoken = "M2102K1GM2102K1G"
+userId = ""
+devicetoken = ""
 
 # 在菠萝包漫画app里抓包后，可从请求头里获得cookie和devicetoken，userId需要抓包个人页面获得
 [sfmh]
