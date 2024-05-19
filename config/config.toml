@@ -1,5 +1,5 @@
 # 任务列表，在这里填写脚本文件的名字，填写格式如 ["mt", "kanxue"]
-taskList = ["ciweimao", "ciyuanji"]
+taskList = ["ciweimao", "ciyuanji", "sfacg", "dianya", "bkneng", "ssly", "kurobbs", "kanxue"]
 
 # 推送参数
 [Push.qywx]
@@ -34,7 +34,7 @@ devicetoken = ""
 
 # 在点鸭app里抓包后，可从请求头里获得cookie和devicetoken
 [dianya]
-cookie = ""
+cookie = ".SFCommunity=3FDF7BF620BD924D7E936337F133CFAEF081A5147D1FB1A6CFA08F51B9F6C9B7A108974F923C4E9E63672AD3534DD55A4E3C07B20FB316D9892176368D332908434D0E84631CB1495829882003CD59520A90BC4D004D86B627449D2136C6722A; session_APP3=EDD52D1F1DCF7B89D829D1BEFC7380CE"
 devicetoken = ""
 
 # 在次元姬app里抓包后，可从请求头里获得
@@ -46,17 +46,17 @@ targetmodel = "SEA-AL10"
 
 # 在不可能的世界APP里抓包登录可得
 [bkneng]
-username = ""
-n4 = ""
+username = "C6930701"
+n4 = "SEA-AL10"
 n5 = ""
-n7 = ""
-device = ""
+n7 = "d9b1a75a0545f0d1"
+device = "__d3b7a95a0585f0d7"
 aesKey = ""
 aesData = ""
 
 # 在绅士领域app里抓包签到后，可从请求体里获得
 [ssly]
-uid = ""
+uid = "1292939"
 
 # 抓包mt论坛网站获得
 [mt]
@@ -64,12 +64,12 @@ cookie = ""
 
 # 在库街区app里抓包后，可从请求头里获得token和devCode，userId需要抓包我的页面获得
 [kurobbs]
-token = ""
-userId = ""
-devCode =  ""
-distinctId = ""
-model = ""
+token = "eyJhbGciOiJIUzI1NiJ9.eyJjcmVhdGVkIjoxNzE2MDc5ODg4NDc1LCJ1c2VySWQiOjEwNjUwNzE5fQ.PKdGYW2LHKGcG0MqsDhfjQ_sMyREQksHQtBvtFFG4GU"
+userId = "10650719"
+devCode =  "98FF4DD42A07E03D0DA152C82B4BDD0542119070"
+distinctId = "39ad7128-0bfa-4171-a69f-c9b87c5b8a2f"
+model = "SEA-AL10"
 
 # 抓包看雪论坛网站获得
 [kanxue]
-cookie = ""
+cookie = "__jsluid_s=5d300349147e80689a7c81baac12614a; passport_sid=66494f88a15e0; passport_token=mD1tQ_2FomTk8zEliDjMjTtXRBaj_2BBTG1G8tQlbvZ_2BIAEA3oBY09TkKBQWDHoL_2BFnE73My5w_3D_3D; PHPSESSID=ece9528878ae00a1469b8e953a2f922b"
