@@ -1,6 +1,6 @@
-# 任务列表，在这里填写脚本文件的名字，填写格式如 ["mt", "kanxue"]
-# taskList = ["ciweimao", "ciyuanji", "sfacg", "dianya", "bkneng", "ssly", "kurobbs", "kanxue"]
-taskList = ["ssly", "kurobbs", "kanxue"]
+# 任务列表，在这里填写脚本文件的名字，填写格式如 ["mt", "bkneng"]
+# taskList = ["ciweimao", "ciyuanji", "ssly", "kurobbs", "kanxue"]
+# taskList = ["bkneng"]
 # 推送参数
 [Push.qywx]
 corpsecret = ""
@@ -48,19 +48,16 @@ targetmodel = "SEA-AL10"
 [bkneng]
 username = "C6930701"
 n4 = "SEA-AL10"
-n5 = ""
+n5 = "com.bkneng.reader"
 n7 = "d9b1a75a0545f0d1"
 device = "__d3b7a95a0585f0d7"
-aesKey = ""
-aesData = ""
+aesKey = "CBCIJX4FTALIakc+2jb0WNN72hveV1it4LyNhJAMdj/2DlhbZGAOJ+/5RjjzjNKr9KLkiHQqiWuOz0QVaNdY6GeZFwe9FdmRXl53zlgGPozc2kUXYwWpMSW6JHVga+6q9Pb1AvA8n7lrjGhLm0hxJoPdiEZpijnXsNd9h6/DHvU="
+aesData = "b0PYy3LCA3TclzpyjfpkgQkgDtxYpbpKUYvqWpovn0f6YGdQ7i9QLEEcsicG5szIoJhgt7+vkcxyTTACVTya9BphoCTJej9WNZNYiu5HnXGS098KbGrTmJsZXfaZzuqJEauRBoluk2kykYL02/f6X2WH+Y5JAmXH9iUfaiYYB4/6etyK7ZeulsF6UMOillIstJkX4sLlwnDNnPQjNRjxHPFDBObToMKpqqaEE/y6/legMbFTFhc28GkrBTpooPWVt15m2JAO3AWKJg3aN73KkXqu5X4a1hU2rUZgzVJPPJ38VWKOMHQo6qeIloGdIdrKOFKHDAzfHTCyIwLIKN57gnBJzz8zyxJp72/wmXQcEjMNL6aaQzgR6hI3ZkSFdw+wTHt2VN5Kru0vq7U9adpImVCShBZEzEQvVreMTp9BGBPHb1d05Rl57+7c8oomdfuqg4IixqhiM4AZ43zQ42CtqcJkkIvcm+Uxpl4ej1KemdWCiyXVlcAqFyyOUi0cuOGSLqh08QHfP68dm537/3KNNcADS4bGfgw8HvwfluxWHO+jZ6ujkLABd4Y9Q63DwXsi+bQ/YDrKJqUL185I45Dp1u9O77ZubJLAQF03UOPtdmHWW7JybnC9WEJyKnlmhDEvnC5rOC3azDoX8jKhbWdRNd269cl3+1CHB0LIwhQrupXEYGlOEpOK8XmqNS7HlTY7TYTI1nCTyu9zAjpq3cVbY4RBKlqtTo+t3HuNPWw5GneHH6NBM3v8SQ5Rdm0oLEng0fv5YkWBVQm7YEqjzRctmlcERZweVdv16ZV3xTQhhtESXyvzjtQdj9ufhflcLkeoyzNtY1TEKerTxnO0znBXMfH+H1vcOCPmxU/Qcgsg3aLRIiJU8Y2NBFwh6ypS+qDrQ9Y+bDNnkN6bQwHRjCGaTGxSz17oaO79yNwBsZ3icL9Z5i09FUv+JNKfaF6tMmwR5kYB+Z6uz8k/thoeHkZs60uqdJPG+9si/VSrOzIPQJy/o4D3R3r8Q+PrrtSxBnxSEOPUZ3E0dHf53JY3TKCEQMS4/VfHmTk2/+X2bzzObQPL3BeGvu8fyI1lgcj7L8WB5mvnQ3Wy1zohsJbDkG97M3ORIR9aHTFxz6eRty/atG92KwtUBby2UXo9yasE6WitDz0MoymXnYS45K4Fq7Ubuv4wjR/UGFyTC41R7WlnGGVdV39OnzwEZ0B63+ch0ybZ"
 
 # 在绅士领域app里抓包签到后，可从请求体里获得
 [ssly]
 uid = "1292939"
 
-# 抓包mt论坛网站获得
-[mt]
-cookie = ""
 
 # 在库街区app里抓包后，可从请求头里获得token和devCode，userId需要抓包我的页面获得
 [kurobbs]
