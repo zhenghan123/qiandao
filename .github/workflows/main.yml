@@ -2,7 +2,7 @@ name: Run qiandao
 
 on:
   schedule:
-    - cron: '59 23 * * *'  # 每天的UTC时间23:30执行，对应北京时间次日7:30
+    - cron: '00 23 * * *'  # 每天的UTC时间23:30执行，对应北京时间次日7:30
   workflow_dispatch:
 
 jobs:
