@@ -6,7 +6,7 @@ let devicetoken = config.sfmh.devicetoken;
 let userId = config.sfmh.userId;
 
 const SALT = "xw3#a12-x"
-const version = "1.5.18"
+const version = "1.5.20"
 
 function getNowFormatDate() {
     let date = new Date();
@@ -22,17 +22,18 @@ function getNowFormatDate() {
     return year + "-" + month + "-" + Day;
 }
 
-async function get(url) {
+async function get(options) {
     let nonce = uuid().toUpperCase();
     let timestamp = Math.round(new Date().getTime()).toString();
     let sign = digest(nonce + timestamp + devicetoken.toUpperCase() + SALT, "md5").toUpperCase();
     return await got({
-        url: url,
+        url: `https://api.sfacg.com/${options.url}`,
         method: "get",
+        searchParams: options.data,
         headers: {
             cookie: cookie,
             authorization: "Basic Y29taWN1c2VyOmczQGYsRGo1dnJ3c1o=",
-            "user-agent": `boluobao_comic/${version}(android;34)/H5/${devicetoken}/H5`,
+            "user-agent": `boluobao_comic/${version}(android;34)/H5/${devicetoken}/Google`,
             "sfsecurity": `nonce=${nonce}&timestamp=${timestamp}&devicetoken=${devicetoken.toUpperCase()}&sign=${sign}`
         },
         responseType: "json"
@@ -48,13 +49,13 @@ async function post(options) {
     let timestamp = Math.round(new Date().getTime()).toString();
     let sign = digest(nonce + timestamp + devicetoken.toUpperCase() + SALT, "md5").toUpperCase();
     return await got({
-        url: options.url,
+        url: `https://api.sfacg.com/${options.url}`,
         method: options.method,
         json: options.data,
         headers: {
             cookie: cookie,
             authorization: "Basic Y29taWN1c2VyOmczQGYsRGo1dnJ3c1o=",
-            "user-agent": `boluobao_comic/${version}(android;34)/H5/${devicetoken}/H5`,
+            "user-agent": `boluobao_comic/${version}(android;34)/H5/${devicetoken}/Google`,
             "sfsecurity": `nonce=${nonce}&timestamp=${timestamp}&devicetoken=${devicetoken.toUpperCase()}&sign=${sign}`
         },
         responseType: "json"
@@ -67,7 +68,14 @@ async function post(options) {
 
 //查询任务
 async function gettask() {
-    return await get(`https://api.sfacg.com/user/tasks?taskCategory=1&page=0&size=20`).then(res => {
+    return await get({
+        url: `user/tasks`,
+        data: {
+            taskCategory: 1,
+            page: 0,
+            size: 20
+        }
+    }).then(res => {
         return res.data;
     })
 }
@@ -75,7 +83,7 @@ async function gettask() {
 //签到
 async function sign() {
     return await post({
-        url: "https://api.sfacg.com/comic/signInfo",
+        url: "comic/signInfo",
         method: "put",
         data: {}
     }).then(res => {
@@ -86,7 +94,7 @@ async function sign() {
 //领取任务
 async function lqrw(id) {
     return await post({
-        url: `https://api.sfacg.com/user/tasks/${id}`,
+        url: `user/tasks/${id}`,
         method: "post",
         data: {}
     }).then(res => {
@@ -97,7 +105,7 @@ async function lqrw(id) {
 //领取奖励
 async function lqjl(id) {
     return await post({
-        url: `https://api.sfacg.com/user/tasks/${id}`,
+        url: `user/tasks/${id}`,
         method: "put",
         data: {}
     }).then(res => {
@@ -108,7 +116,7 @@ async function lqjl(id) {
 //分享
 async function share(userId) {
     return await post({
-        url: `https://api.sfacg.com/user/tasks?taskId=25&userId=${userId}`,
+        url: `user/tasks?taskId=25&userId=${userId}`,
         method: "put",
         data: {
             env: 0
@@ -121,7 +129,7 @@ async function share(userId) {
 //阅读时长
 async function read(time) {
     return await post({
-        url: "https://api.sfacg.com/user/readingtime",
+        url: "user/readingtime",
         method: "put",
         data: {
             seconds: time,
