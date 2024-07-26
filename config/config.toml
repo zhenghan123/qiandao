@@ -1,5 +1,5 @@
 # 任务列表，在这里填写脚本文件的名字，填写格式如 ["mt", "kanxue"]
-taskList = []
+taskList = ["ciweimao"]
 
 # 推送参数
 [Push.qywx]
@@ -17,9 +17,9 @@ key = ""
 
 # 在刺猬猫app里抓包后，可从请求体里获得，ua需要从请求头里获得
 [ciweimao]
-account = ""
-token = ""
-ua = ""
+account = "书客63756384686"
+token = "32726e81b282ff7de1314c9e8877680f"
+ua = "Android  com.kuangxiangciweimao.novel.c  2.9.329, HUAWEI, SEA-AL10, 29, 10"
 
 # 在次元姬app里抓包后，可从请求头里获得
 [ciyuanji]
