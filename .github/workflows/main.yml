@@ -1,1 +1,31 @@
+name: Run JS Script
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  
+  # schedule:
+  #   - cron: '* * * * *'  # 这会每分钟运行一次，你需要根据你的需求修改这个 cron 语句
+  workflow_dispatch:  # 允许手动触发
+# on:
+#   push:
+#     branches: [ main ]
 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14 
+
+    - name: Install dependencies
+      run: npm i
+      # run: npm install
+
+    - name: Run script
+      run: npm start
