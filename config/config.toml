@@ -1,5 +1,5 @@
 # 任务列表，在这里填写脚本文件的名字，填写格式如 ["mt", "kanxue"]
-taskList = ["ciweimao"]
+taskList = ["ciweimao", "kanxue"]
 
 # 推送参数
 [Push.qywx]
@@ -56,4 +56,4 @@ model = ""
 
 # 抓包看雪论坛网站获得
 [kanxue]
-cookie = ""
+cookie = "__jsluid_s=5d300349147e80689a7c81baac12614a; _ga=GA1.1.1409990885.1722251651; passport_sid=66a779924fec8; PHPSESSID=2a1cae82a3e0522ad9620eab2030710a; __snaker__id=YV1epxsKr3Kw9bP6; gdxidpyhxdE=TqTMDKp5%5CaLNMyjul8YBefegjcgJ0gIdQkemv%2BsvEMGyrIEr%2BEZcHr0htI0MrNB9s1NzeOLsQBrCJPeSis7OvzBvgOuL5WSD0xIVeDvJRRRXGo19rX1ajDZ9b%5ChyMffNSO2qOWZz%5C110nZOTDI9mHvWBiuR%2FIDtX%2BevrpH7aYw9vMdvE%3A1722252751362; passport_token=rXhx_2BKtMp4nh4DBHRuDe48yRF7VvlOGWr354yBjfYcpUtJeyELVuD0BkLfTVjp0eDwWK1A_3D_3D; _ga_WG3E345FRQ=GS1.1.1722251651.1.1.1722253141.0.0.0"
